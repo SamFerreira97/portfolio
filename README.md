@@ -1,36 +1,43 @@
 # Samuel Ferreira — Portfólio profissional
 
-Portfólio com apresentação profissional, formação, experiência, projetos e galeria de interfaces.
+[Acesse o portfólio](https://samferreira97.github.io/portfolio/)
 
-## Projetos apresentados
+Site estático em português para apresentar sistemas de gestão e catálogos comerciais, com foco em clientes. O design parte da proposta `portfolio-redesign.html` fornecida pelo autor: fundo concreto, texto azul-marinho, destaque amarelo e fontes Bricolage Grotesque e IBM Plex Sans.
 
-- COPOM MULHER: gestão de atendimentos e encaminhamentos ao PROVID.
-- Monitoramento de Ocorrências: acompanhamento operacional e relatórios.
-- Kaká Lacerda — Flores e Cestas: site e catálogo de presentes.
-- Distribuidora Primo Bode: site e catálogo de bebidas e conveniência.
+## Projetos
 
-## Como visualizar
+- **COPOM MULHER:** fichas, atendimentos e encaminhamentos ao PROVID. Código privado; capturas reais de execução local com banco vazio.
+- **Monitoramento de Ocorrências:** importação de planilhas, intervenções e fechamento de relatórios com verificação de pendências. Prévia conceitual identificada na página.
+- **Kaká Lacerda — Flores e Cestas:** catálogo de presentes com atendimento contextual pelo WhatsApp.
+- **Distribuidora Primo Bode:** catálogo de bebidas com busca, categorias e consulta pelo WhatsApp.
 
-Abra `index.html` em qualquer navegador. O arquivo inclui estilos, JavaScript e as 14 capturas de interface, sem precisar de instalação ou serviços externos para renderizar o portfólio. Os links de contato e dos projetos acessam seus serviços correspondentes.
+O portfólio não contém o código privado dos sistemas nem bases de dados de atendimentos.
 
-## Publicar com GitHub Pages
+## Estrutura
 
-1. Envie `index.html`, `.nojekyll` e este `README.md` à raiz de um repositório público.
-2. Em **Settings → Pages**, selecione **Deploy from a branch**.
-3. Escolha a branch `main`, pasta **/ (root)**, e salve.
-4. Aguarde o GitHub mostrar o endereço publicado e confirme a abertura do site.
+- `index.html`: conteúdo, metadados de compartilhamento e estilos responsivos.
+- `portfolio.js`: filtros, detalhes de projetos e galeria ampliável por projeto.
+- `*.webp`: 14 capturas reais. A página destaca nove, e a galeria permite explorar todas.
+- `curriculo-samuel-ferreira.pdf`: resumo profissional com os contatos publicados no portfólio.
+- `favicon.svg` e `social-preview.jpg`: identidade e prévia de compartilhamento.
+- `*.woff2`: fontes locais. Licenças nos arquivos `LICENSE-font-*.txt`.
+- `.nojekyll`: publicação estática no GitHub Pages.
 
-O nome sugerido para o repositório é `portfolio`. O endereço é informado pelo GitHub após a publicação.
+## Visualizar e atualizar
 
-## Atualizações
+Não há etapa de build nem instalação de dependências. Sirva a pasta com qualquer servidor HTTP estático ou abra `index.html` no navegador. Mantenha os arquivos de imagens, fontes e JavaScript ao lado do HTML.
 
-O portfólio é uma página estática em HTML, CSS e JavaScript. As imagens estão incorporadas ao HTML, inclusive na galeria ampliável. Edite o conteúdo de `index.html` para atualizar o perfil, os contatos e os projetos.
+Edite os textos no HTML e os dados dos modais em `portfolio.js`. Os botões de contato usam links diretos; não há formulário, rastreadores ou banco de dados neste portfólio.
 
-As telas do COPOM MULHER foram capturadas em uma execução local da aplicação com banco vazio. Este repositório do portfólio não contém o código privado do COPOM MULHER nem bases de dados.
+O GitHub Pages está configurado para publicar a branch `main`, pasta `/ (root)`. Commits nessa branch atualizam o site após a conclusão do workflow de publicação.
 
-## Contatos
+## Verificações do redesign
 
-- GitHub: https://github.com/SamFerreira97
-- LinkedIn: https://www.linkedin.com/in/samuel-silas-dos-santos-ferreira-928618174/
-- Instagram: https://www.instagram.com/samferreiras2/
-- WhatsApp: https://wa.me/5561993071004
+Filtros de projetos, detalhes de COPOM MULHER e galeria com navegação foram exercitados no navegador. O layout foi inspecionado em desktop e em quadros com larguras de 320, 390 e 768 pixels. Foram conferidos os arquivos locais, âncoras, textos alternativos, sintaxe JavaScript e conteúdo do currículo em PDF.
+
+## Contato
+
+- [WhatsApp](https://wa.me/5561993071004)
+- [Instagram](https://www.instagram.com/samferreiras2/)
+- [LinkedIn](https://www.linkedin.com/in/samuel-silas-dos-santos-ferreira-928618174/)
+- [GitHub](https://github.com/SamFerreira97)
