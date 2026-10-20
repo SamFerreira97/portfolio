@@ -35,7 +35,7 @@ body {background:var(--concreto); color:var(--tinta); padding-top:86px; transiti
 a,button {transition:color .18s ease,background-color .18s ease,border-color .18s ease,box-shadow .18s ease}
 :focus-visible {outline:3px solid var(--ceu);outline-offset:4px}
 .wrap {max-width:1200px}
-section,.showcase,#inicio {scroll-margin-top:105px}
+section,.showcase,#inicio,#servicos {scroll-margin-top:105px}
 .brand-dot,.resultado>span {color:var(--ipe)}
 .eyebrow {color:var(--ceu);font-weight:700;letter-spacing:.17em}
 section h2 {font-size:clamp(2rem,3.25vw,2.9rem);max-width:26ch}
@@ -66,12 +66,12 @@ html[data-theme="light"] .theme-toggle .icon-moon {display:block}
 .skip-link {z-index:100;background:var(--accent-strong);color:#fff}
 
 /* Above the fold: bold typography and a personal portrait */
-.hero {position:relative;isolation:isolate;max-width:1200px;min-height:625px;padding:80px 24px 88px;grid-template-columns:1.12fr .88fr;gap:80px;align-items:center}
+.hero {position:relative;isolation:isolate;max-width:1200px;min-height:625px;padding:68px 24px 76px;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center}
 .hero:before {content:"";position:absolute;z-index:-1;pointer-events:none;inset:0 auto auto -12%;width:min(850px,95vw);height:600px;background:radial-gradient(ellipse at 40% 50%,rgb(126 70 209 / 10%),transparent 67%)}
 .hero-copy {position:relative;z-index:2}
 .hero .eyebrow {display:inline-flex;align-items:center;gap:9px;border:1px solid var(--linha);border-radius:100px;padding:9px 14px;margin-bottom:22px;letter-spacing:.11em;background:var(--surface-soft)}
 .hero .eyebrow:before {content:"";width:7px;height:7px;border-radius:50%;background:var(--ipe);box-shadow:0 0 12px var(--ipe)}
-.hero h1 {font-size:clamp(3.4rem,6vw,5.9rem);letter-spacing:-.065em;line-height:1.02;max-width:12ch}
+.hero h1 {font-size:clamp(2.65rem,4.6vw,4.55rem);letter-spacing:-.055em;line-height:1.06;max-width:18ch}
 .hero h1 span {display:block;color:var(--ceu)}
 .hero p {color:var(--suave);font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.75;max-width:47ch;margin-top:26px}
 .hero .acoes {margin-top:32px;gap:13px}
@@ -80,8 +80,6 @@ html[data-theme="light"] .theme-toggle .icon-moon {display:block}
 .btn.primario:hover {background:#7425ce;border-color:#7425ce;color:#fff;transform:translateY(-2px)}
 .btn.secundario {background:transparent;border-color:var(--linha);color:var(--tinta)}
 .btn.secundario:hover {background:var(--surface-alt);border-color:var(--ceu);color:var(--tinta)}
-.hero-proof {display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;font-size:.76rem;color:var(--suave)}
-.hero-proof span {padding:7px 12px;border:1px solid var(--linha);border-radius:100px;background:var(--surface-soft)}
 .portrait-stage {min-height:450px;display:grid;place-items:center;position:relative;isolation:isolate}
 .portrait-stage:before {content:"";position:absolute;width:min(410px,100%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgb(139 67 247 / 18%),transparent 72%);filter:blur(13px)}
 .portrait-ring {position:relative;width:min(355px,90%);aspect-ratio:1;border-radius:50%;border:6px solid var(--surface-alt);box-shadow:0 22px 65px rgb(0 0 0 / 27%),0 0 0 1px var(--linha);background:linear-gradient(145deg,#3b2e61,#1b2740);overflow:hidden;display:grid;place-items:center}
@@ -102,17 +100,6 @@ html[data-theme="light"] .theme-toggle .icon-moon {display:block}
 .service-index {display:block;font-size:.72rem;color:var(--ceu);font-weight:700;letter-spacing:.12em;margin-bottom:17px}
 .service-card h2 {font:700 1.2rem/1.3 var(--display);color:var(--tinta);margin:0 0 10px;letter-spacing:-.02em}
 .service-card p {font-size:.91rem;line-height:1.7;color:var(--suave);max-width:39ch}
-
-/* Preserved project preview, now its own featured section */
-.spotlight {background:var(--concreto);padding:82px 0}
-.spotlight-layout {display:grid;grid-template-columns:.72fr 1.28fr;gap:75px;align-items:center}
-.spotlight-copy h2 {font-size:clamp(2rem,3.2vw,3rem);margin-bottom:18px}
-.spotlight-copy p {color:var(--suave);font-size:.99rem;line-height:1.75;max-width:40ch}
-.spotlight-copy .text-link {display:inline-block;margin-top:24px}
-.spotlight .hero-project {width:100%;min-width:0}
-.spotlight .hero-project .janela {transform:rotate(0);border:1px solid var(--linha);border-radius:16px;box-shadow:12px 12px 0 rgb(137 77 232 / 17%)}
-.spotlight .hero-project figcaption {margin-top:18px}
-.status-dot {background:var(--ipe)}
 
 /* Modular work tiles and interface gallery */
 #projetos {background:var(--surface-soft)}
@@ -145,7 +132,7 @@ html[data-theme="light"] .theme-toggle .icon-moon {display:block}
 .screen-trigger .janela {box-shadow:2px 2px 0 rgb(161 106 250 / 17%)}
 .screen-trigger:hover .janela {box-shadow:5px 5px 0 rgb(161 106 250 / 30%)}
 .zoom {background:var(--accent-strong);color:#fff;border-radius:7px}
-.profile .monogram {background:var(--accent-strong);border:0;color:#fff;border-radius:14px}
+.profile-photo {display:block;width:72px;height:72px;flex-shrink:0;object-fit:cover;object-position:center 35%;border:2px solid var(--linha);border-radius:18px;box-shadow:0 7px 22px rgb(0 0 0 / 18%)}
 .expertise {background:var(--papel);border:1px solid var(--linha);border-radius:18px;padding:30px}
 .career {border-color:var(--linha)}
 .contact-details {border-color:var(--linha)}
@@ -158,22 +145,21 @@ dialog::backdrop {background:rgb(3 7 16 / 78%)}
 #screen-full {background:var(--surface-alt)}
 .phone:hover {color:var(--ceu)}
 
+@media(max-width:1000px) {header .socials {display:none}}
 @media(max-width:1100px) {
   header .wrap {gap:15px}
   header nav {gap:16px}
   .theme-toggle-label {display:none}
   .hero {gap:35px}
-  .spotlight-layout {gap:35px}
 }
 @media(max-width:860px) {
   body {padding-top:79px}
   header .wrap {min-height:79px}
   .hero {grid-template-columns:1.05fr .95fr;gap:28px;min-height:500px;padding:64px 24px 70px}
-  .hero h1 {font-size:clamp(2.75rem,5.4vw,4.3rem)}
+  .hero h1 {font-size:clamp(2.4rem,4.6vw,3.5rem);max-width:19ch}
   .hero p {font-size:.98rem}
   .portrait-stage {min-height:345px}
   .portrait-ring {width:min(290px,91%)}
-  .spotlight-layout {grid-template-columns:1fr 1.25fr}
   .service-card {padding:30px 18px}
 }
 @media(max-width:700px) {
@@ -185,11 +171,10 @@ dialog::backdrop {background:rgb(3 7 16 / 78%)}
   header nav {order:2;width:100%;flex:none;margin:9px 0 0;padding:6px 0 0;gap:24px;border-top:1px solid var(--linha);overflow-x:auto;scrollbar-width:thin}
   header nav a {font-size:.77rem;padding:5px 0 8px}
   .hero {grid-template-columns:1fr;gap:14px;min-height:auto;padding:52px 22px 55px}
-  .hero h1 {font-size:clamp(3rem,10.4vw,5.2rem);max-width:13ch}
+  .hero h1 {font-size:clamp(2.45rem,8.5vw,4rem);max-width:18ch}
   .hero .eyebrow {font-size:.62rem;margin-bottom:19px}
   .hero p {font-size:1rem}
   .hero .acoes {margin-top:26px}
-  .hero-proof {margin-top:24px}
   .portrait-stage {min-height:375px}
   .portrait-ring {width:min(305px,75vw)}
   .portrait-caption {bottom:3%}
@@ -198,16 +183,12 @@ dialog::backdrop {background:rgb(3 7 16 / 78%)}
   .service-card+.service-card {border-left:0;border-top:1px solid var(--linha)}
   .service-index {margin-bottom:8px}
   .service-card h2 {font-size:1.12rem}
-  .spotlight {padding:58px 0}
-  .spotlight-layout {grid-template-columns:1fr;gap:28px}
-  .spotlight-copy h2 {font-size:2rem}
-  .spotlight .hero-project .janela {box-shadow:7px 7px 0 rgb(137 77 232 / 15%)}
   .expertise {padding:23px}
   .screen-grid figure {padding:12px}
-  section,.showcase,#inicio {scroll-margin-top:127px}
+  section,.showcase,#inicio,#servicos {scroll-margin-top:127px}
 }
 @media(max-width:400px) {
-  .hero h1 {font-size:clamp(2.58rem,11vw,3.4rem)}
+  .hero h1 {font-size:clamp(2.26rem,8.1vw,2.85rem)}
   .hero .btn {padding:11px 14px;font-size:.82rem}
   header nav {gap:19px}
   .portrait-stage {min-height:320px}
@@ -222,8 +203,6 @@ dialog::backdrop {background:rgb(3 7 16 / 78%)}
   .portrait-stage {min-height:250px}
   .services-strip {background:#fff}
   .service-card {padding:15px}
-  .spotlight {padding:25px 0}
-  .spotlight-layout {grid-template-columns:1fr 1fr}
   .card,.expertise,.screen-grid figure {box-shadow:none}
   .theme-toggle {display:none}
 }
